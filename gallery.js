@@ -2,14 +2,14 @@
 for (var i = 0; i < colors.length; i++) {
     var color = colors[i];
     var row = `
-        <div class="row">
-            <div class='col-md-6' style="background-color: ${color.hex}; height:50px;">
+        <tr>
+            <td style="background-color: ${color.hex}; height:50px; width:400px;">
 
-            </div>
-            <div class='col-md-6 color-name'>
+            </td>
+            <td class='color-name'>
                 ${color.ru_name}
-            </div>
-        </div>`;    
+            </td>
+        </tr>`;    
 
     $('#colors-table').append(row);
 }
